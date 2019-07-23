@@ -8,6 +8,7 @@ module.exports = app => {
         .post('*', (req, res) => {
             console.log('post')
             console.log(req.body)
+            console.log(req.params)
             res.send('post')
         })
 }
