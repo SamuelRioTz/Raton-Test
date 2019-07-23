@@ -2,6 +2,7 @@ module.exports = app => {
     app.get('*', (req, res) => {
         console.log('get')
         console.log(req.body)
+        console.log(req.params)
         res.send('get')
     })
         .post('*', (req, res) => {
